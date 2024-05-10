@@ -19,11 +19,11 @@ public class Assignment003 {
         }
         System.out.print("}");
 
-        max=salary[0];
+        max=0;
         for (k=0;k<salary.length-1;k++) {
-            if (salary[k] > salary[k + 1])
-                max = salary[k];
+            if (salary[k+1] > salary[max])
+                salary[max] = salary[k+1];
         }
-        System.out.println("\nHighest(max) Salary: "+salary[k]);
+        System.out.println("\nHighest(max) Salary: "+salary[max]);
     }
 }
