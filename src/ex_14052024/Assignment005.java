@@ -2,7 +2,7 @@ package ex_14052024;
 
 import java.util.Scanner;
 
-//Remove Duplicates from a String
+//Remove Duplicate alphabets from a String
 public class Assignment005 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
