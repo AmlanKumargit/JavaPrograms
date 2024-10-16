@@ -6,8 +6,9 @@ import java.util.Map;
 //Java Program to Count Occurrences Of Each Character In String
 public class Hash004 {
     public static void main(String[] args) {
-        String s = "abcasldjlabcasiejabc";
-        char[] c = s.toCharArray();
+        String s = "DevLabsAlliance";//"abcasldjlabcasiejabc";
+        String ss =s.toLowerCase();
+        char[] c = ss.toCharArray();
 
         HashMap<Character, Integer> map=new HashMap<>();
         for(char ch:c)
@@ -20,7 +21,8 @@ public class Hash004 {
 
         for(Map.Entry<Character,Integer> m:map.entrySet())
                 {
-                    System.out.println("character: "+m.getKey() + " || " + "frequency: "+m.getValue());
+                    //if(m.getValue()==3)
+                    { System.out.println("character: "+m.getKey() + " || " + "frequency: "+m.getValue());}
                 }
     }
 }
